@@ -30,17 +30,31 @@
 }
 .action{
     position: absolute;
-    right: 20px;
-    top: 0px;
-    list-style: none;
-    background-color: white;
-    text-align: center;
-    padding: 5px;
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-.content{
-    
+    float: right;
+    top: 4px;
+    right: 20px; 
+    padding: 0;
 }
 
- 
+.action li {
+    position: relative;
+    list-style: none;
+    background: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.action li:hover span{
+    background: red;
+    color: wheat;
+}
+
+.action li span {
+    position: absolute;
+    right: 20px;
+    width: 70px;
+    font-size: 10px;
+    padding: 0;
+    background: white;
+}
