@@ -1,3 +1,5 @@
+
+
 .filter{
     display: flex;
     align-items: center;
@@ -27,6 +29,8 @@
     position: relative;
     grid-gap: 20px;
     padding: 20px;
+    max-width: 250px;
+    max-height: 430px;
 }
 .action{
     position: absolute;
@@ -58,3 +62,15 @@
     padding: 0;
     background: white;
 }
+
+.productImage {
+    max-width: 250px;
+    max-height: 300px;
+}
+
+.price-and-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
