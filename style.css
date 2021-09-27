@@ -18,19 +18,25 @@
 } 
 
 .container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
     align-content: center;
+    justify-content: center;
     min-height: 100vh;
-    background: #dcdcdc;
+    background: gray;
+    
   }
 
 .card{
+    display: inline-block;
     position: relative;
     grid-gap: 20px;
     padding: 20px;
     max-width: 250px;
     max-height: 430px;
+    background:#ffffff;
+    justify-content: center;
 }
 .action{
     position: absolute;
@@ -74,3 +80,10 @@
     justify-content: space-between;
 }
 
+.price{
+    color: red;
+}
+
+.rating {
+    color: yellow;
+}
