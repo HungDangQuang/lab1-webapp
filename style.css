@@ -1,0 +1,46 @@
+.filter{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.filter li {
+    display: inline;
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #eee;
+}
+
+.filter li:hover{
+    background-color: aqua;
+} 
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    background: #dcdcdc;
+  }
+
+.card{
+    position: relative;
+    grid-gap: 20px;
+    padding: 20px;
+}
+.action{
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    list-style: none;
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.content{
+    
+}
+
+ 
