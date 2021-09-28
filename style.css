@@ -1,4 +1,8 @@
-
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 .filter{
     display: flex;
@@ -19,22 +23,20 @@
 
 .container {
     display: grid;
-    grid-template-columns: auto;
-    grid-gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 100px;
     align-content: center;
     justify-content: center;
-    min-height: 100vh;
     background: gray;
-    
+    margin: 0;
   }
 
 .card{
-    display: inline-block;
+    margin: 20px;
     position: relative;
-    grid-gap: 20px;
-    padding: 20px;
-    max-width: 250px;
-    max-height: 430px;
+    width: 250px;
+    height: 380px;
+    margin: 10px;
     background:#ffffff;
     justify-content: center;
 }
@@ -46,13 +48,19 @@
     padding: 0;
 }
 
-.action li {
+.card .action li {
     position: relative;
     list-style: none;
     background: white;
-    display: flex;
+    display: none;
     align-items: center;
     cursor: pointer;
+    transform: translateX(20px);
+    transition: transform 0.5s;
+}
+
+.card:hover .action li {
+    display: flex;
 }
 
 .action li:hover span{
@@ -61,12 +69,17 @@
 }
 
 .action li span {
+    display: none;
     position: absolute;
     right: 20px;
     width: 70px;
     font-size: 10px;
     padding: 0;
     background: white;
+}
+
+li:hover span {
+    display: block;
 }
 
 .productImage {
@@ -78,6 +91,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 10px;
 }
 
 .price{
@@ -86,4 +100,8 @@
 
 .rating {
     color: yellow;
+}
+
+.product-name {
+    padding: 10px;
 }
