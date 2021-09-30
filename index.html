@@ -12,15 +12,15 @@
 <body>
         <div class="menu">
             <ul class="filter">
-                <li class="item">All</li>
-                <li class="item">Watch</li>
-                <li class="item">Handbag</li>
-                <li class="item">Shirts</li>
-                <li class="item">+</li>
+                <li class="item active" data-filter="All">All</li>
+                <li class="item" data-filter="Watch">Watch</li>
+                <li class="item" data-filter="Handbag">Handbag</li>
+                <li class="item" data-filter="Shirt">Shirts</li>
+                <li class="item" data-filter="+">+</li>
             </ul>
         </div>
          <div class="container">
-             <div class="card">
+             <div class="card show" data-item="+">
                  <img class="productImage" src="./images/1.jpeg"/>
                  <ul class="action">
                     <li><i class="fa fa-heart" aria-hidden="true"></i><span class="content">Add to Wishlist</span></li>
@@ -42,7 +42,7 @@
                 </div>
              </div>
 
-             <div class="card">
+             <div class="card show" data-item="Watch">
                 <img class="productImage" src="./images/2.jpeg"/>
                 <ul class="action">
                    <li><i class="fa fa-heart" aria-hidden="true"></i><span class="content">Add to Wishlist</span></li>
@@ -64,7 +64,7 @@
                </div>
             </div>
 
-            <div class="card">
+            <div class="card show" data-item="Shirt">
                 <img class="productImage" src="./images/3.jpeg"/>
                 <ul class="action">
                    <li><i class="fa fa-heart" aria-hidden="true"></i><span class="content">Add to Wishlist</span></li>
@@ -86,7 +86,7 @@
                </div>
             </div>
 
-            <div class="card">
+            <div class="card show" data-item="Pants">
                 <img class="productImage" src="./images/5.jpeg"/>
                 <ul class="action">
                    <li><i class="fa fa-heart" aria-hidden="true"></i><span class="content">Add to Wishlist</span></li>
@@ -108,7 +108,7 @@
                </div>
             </div>
 
-            <div class="card">
+            <div class="card show" data-item="+">
                 <img class="productImage" src="./images/6.jpeg"/>
                 <ul class="action">
                    <li><i class="fa fa-heart" aria-hidden="true"></i><span class="content">Add to Wishlist</span></li>
@@ -130,7 +130,7 @@
                </div>
             </div>
 
-            <div class="card">
+            <div class="card show" data-item="+">
                 <img class="productImage" src="./images/7.jpeg"/>
                 <ul class="action">
                    <li><i class="fa fa-heart" aria-hidden="true"></i><span class="content">Add to Wishlist</span></li>
@@ -152,7 +152,7 @@
                </div>
             </div>
 
-            <div class="card">
+            <div class="card show" data-item="+">
                 <img class="productImage" src="./images/8.jpeg"/>
                 <ul class="action">
                    <li><i class="fa fa-heart" aria-hidden="true"></i><span class="content">Add to Wishlist</span></li>
@@ -174,7 +174,7 @@
                </div>
             </div>
 
-            <div class="card">
+            <div class="card show" data-item="Handbag">
                 <img class="productImage" src="./images/4.jpeg"/>
                 <ul class="action">
                    <li><i class="fa fa-heart" aria-hidden="true"></i><span class="content">Add to Wishlist</span></li>
@@ -199,7 +199,7 @@
          <div class="center">
             <div class="pagination">
                 <button href="#">&laquo;</button>
-                <button href="#" class="active">1</button>
+                <button href="#" class="active">1</button>  
                 <button href="#">2</button>
                 <button href="#">3</button>
                 <button href="#">4</button>
@@ -208,6 +208,6 @@
                 <button href="#">&raquo;</button>
             </div>
         </div>
-         
+    <script src="./script.js"></script>    
 </body>
 </html>

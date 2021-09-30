@@ -17,18 +17,14 @@
     background-color: #eee;
 }
 
-.filter li:hover{
-    background-color: aqua;
-} 
 
 .container {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-gap: 100px;
-    align-content: center;
-    justify-content: center;
-    background: gray;
+    background: #dcdcdc;
     margin: 0;
+    min-height: 100vh;
+    align-items: start;
   }
 
 .card{
@@ -124,7 +120,7 @@ li:hover span {
     margin: 0 4px;
 }
 
-.pagination button.active { 
+.pagination button.active, .filter .active { 
     background-color: #03a9f4;
     color: white;
     border: 1px solid #03a9f4;
@@ -133,4 +129,13 @@ li:hover span {
 .pagination button:hover:not(.active) {
     background-color: #03a9f4;
     color: white;
-  }
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
