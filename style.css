@@ -35,11 +35,12 @@
     margin: 10px;
     background:#ffffff;
     justify-content: center;
+    transition: margin-right 4s ;
 }
 .action{
     position: absolute;
     float: right;
-    top: 4px;
+    top: 0;
     right: 20px; 
     padding: 0;
 }
@@ -53,25 +54,32 @@
     cursor: pointer;
     transform: translateX(20px);
     transition: transform 0.5s;
+    padding: 10px;
 }
 
 .card:hover .action li {
     display: flex;
 }
 
+.action li:hover {
+    background-color: red;
+    color: white;
+}
+
 .action li:hover span{
-    background: red;
+    background-color: red;
     color: wheat;
 }
 
 .action li span {
     display: none;
     position: absolute;
-    right: 20px;
-    width: 70px;
-    font-size: 10px;
-    padding: 0;
+    right: 40px;
+    width: 100px;
+    font-size: 15px;
+    padding: 2px;
     background: white;
+    line-height: 15px;
 }
 
 li:hover span {
